@@ -1,0 +1,50 @@
+.container-fluid {
+  padding: 20px;
+}
+
+.col-6 {
+  width: 50%;
+  float: left;
+  padding: 10px;
+}
+#map {
+  height: 645px;
+  width: 100%;
+}
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+button[type="submit"] {
+  background: #29837d;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.leaflet-bar a.leaflet-control-geosearch::before {
+  content: "\f002"; /* Use a search icon */
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}

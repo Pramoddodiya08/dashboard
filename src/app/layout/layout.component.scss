@@ -1,0 +1,34 @@
+.Maincontainer {
+  padding: 20px;
+  position: fixed;
+  top: 80px;
+  left: 300px;
+  transition: 0.5s;
+  height: 100%;
+  width: 86%;
+  background-color: whitesmoke;
+}
+.newMaincontainer {
+  width: 100%;
+  transition: 0.5s;
+  position: fixed;
+  top: 80px;
+  left: 0;
+  padding: 20px;
+  height: 100%;
+  background-color: whitesmoke;
+}
+.headercontainer {
+  position: fixed;
+  left: 14.1%;
+  transition: 0.5s;
+  z-index: 999;
+  box-shadow: 3px 0 6px rgba(0, 0, 0, 0.24);
+}
+.newSidebar {
+  position: relative;
+  width: 100%;
+  transition: 0.5s;
+  left: 0;
+  box-shadow: 3px 0 6px rgba(0, 0, 0, 0.24);
+}

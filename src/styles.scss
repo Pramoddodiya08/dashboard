@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "ngx-toastr/toastr";
+
+// .modal-content {
+//   margin: 150px auto;
+// }
+.ngx-pagination .current {
+  background-color: rgb(25, 135, 84);
+}

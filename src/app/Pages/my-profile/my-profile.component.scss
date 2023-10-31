@@ -1,0 +1,62 @@
+.imageContainer {
+  height: auto;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 20px;
+  margin: 10px;
+  padding: 10px;
+  background-color: rgb(166, 218, 188);
+}
+.details {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 20px;
+  margin: 10px;
+  padding: 10px;
+}
+.card {
+  border: none;
+  overflow: hidden;
+  background-color: rgb(166, 218, 188);
+  img {
+    border-radius: 50%;
+  }
+}
+
+tr {
+  margin: 20px;
+  height: 50px;
+}
+td {
+  padding-left: 10px;
+}
+p,
+h5 {
+  color: brown;
+  font-weight: bold;
+}
+.header-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+label,
+input,
+textarea,
+select {
+  margin-bottom: 10px;
+}
+.submit,
+.closebtn {
+  padding: 10px;
+  margin-top: 20px;
+  width: 100px;
+  margin-right: 20px;
+}
+// table {
+//   background: white;
+//   padding: 20px;
+//   border-radius: 20px;
+// }
+.col-6 {
+  padding: 20px;
+}

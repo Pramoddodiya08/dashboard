@@ -1,0 +1,95 @@
+<div class="container-fluid">
+  <p style="font-weight: bold">CONTACT PAGE</p>
+  <div class="col-6">
+    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="firstname">First Name :</label>
+        <input
+          type="text"
+          id="firstname"
+          formControlName="firstname"
+          class="form-control"
+        />
+        <div *ngIf="submitted && f['firstname'].errors">
+          <div *ngIf="f['firstname'].errors['required']" style="color: brown">
+            REQUIRED
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="lastname">Last Name :</label>
+        <input
+          type="text"
+          id="lastname"
+          class="form-control"
+          formControlName="lastname"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email :</label>
+        <input
+          type="email"
+          id="email"
+          class="form-control"
+          formControlName="email"
+        />
+        <div *ngIf="submitted && f['email'].errors">
+          <div *ngIf="f['email'].errors['required']" style="color: brown">
+            REQUIRED
+          </div>
+          <div *ngIf="f['email'].errors['email']" style="color: brown">
+            INVALID EMAIL
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="address">Address :</label>
+        <textarea
+          id="address"
+          formControlName="address"
+          class="form-control"
+        ></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="contactnumber">Contact Number :</label>
+        <input
+          type="tel"
+          id="contactnumber"
+          class="form-control"
+          formControlName="contactnumber"
+        />
+        <div *ngIf="submitted && f['contactnumber'].errors">
+          <div
+            *ngIf="f['contactnumber'].errors['required']"
+            style="color: brown"
+          >
+            REQUIRED
+          </div>
+          <div
+            *ngIf="f['contactnumber'].errors['pattern']"
+            style="color: brown"
+          >
+            ENTER 10 DIGIT NUMBER
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="notes">Notes :</label>
+        <textarea
+          id="notes"
+          class="form-control"
+          formControlName="notes"
+        ></textarea>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  <!-- <div class="col-6">
+    <div id="map"></div>
+  </div> -->
+</div>

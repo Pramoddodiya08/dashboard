@@ -1,0 +1,37 @@
+<div class="sidebar" [ngClass]="!newToggle ? 'sidebar' : 'newSidebar'">
+  <div class="header text-center">
+    <img
+      src="https://freelogopng.com/images/all_img/1681038325chatgpt-logo-transparent.png"
+      alt=""
+      class="header-img"
+    />
+  </div>
+  <hr />
+  <div class="components">
+    <div class="sideblock" routerLinkActive="active">
+      <i
+        class="bi bi-house-check-fill"
+        style="color: white; font-size: x-large"
+      ></i>
+      <a routerLink="/home" class="ms-4">Dashboard</a>
+    </div>
+    <div class="sideblock" routerLinkActive="active">
+      <i class="bi bi-file-person" style="color: white; font-size: x-large"></i>
+      <a routerLink="/about" class="ms-4">About</a>
+    </div>
+    <div class="sideblock" routerLinkActive="active">
+      <i
+        class="bi bi-person-lines-fill"
+        style="color: white; font-size: x-large"
+      ></i>
+      <a routerLink="/contact" class="ms-4">Contact</a>
+    </div>
+    <div class="sideLogout">
+      <i
+        class="bi bi-box-arrow-right"
+        style="color: white; font-size: x-large"
+      ></i>
+      <a (click)="logout()" class="ms-4">Logout</a>
+    </div>
+  </div>
+</div>

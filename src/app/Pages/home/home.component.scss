@@ -1,0 +1,33 @@
+.card {
+  height: 200px;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #22a9ad;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  font-size: x-large;
+}
+.boxdiv {
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+.table {
+  width: 100%;
+}
+.firstdiv {
+  padding: 20px;
+}
+.tabdiv {
+  margin-top: 20px;
+  width: 100%;
+  // background-color: white;
+  border-radius: 10px;
+  display: flex;
+}

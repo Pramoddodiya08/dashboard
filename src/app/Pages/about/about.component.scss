@@ -1,0 +1,55 @@
+.modal-body {
+  border-radius: 30px;
+}
+::ng-deep .modal-content {
+  border-radius: 20px;
+  top: 50px;
+  margin: 0 auto;
+  width: 700px;
+  padding: 20px;
+}
+label,
+input,
+textarea,
+select {
+  margin-bottom: 10px;
+}
+.submit,
+.closebtn {
+  padding: 10px;
+  margin-top: 20px;
+  width: 100px;
+  margin-right: 20px;
+}
+
+.header-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+::ng-deep .ngx-pagination .current {
+  background-color: #71d4ce;
+}
+.custom-badge-success {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.custom-badge-danger {
+  background-color: #dc3545;
+  color: #fff;
+}
+:host ::ng-deep .ngx-pagination .current,
+.btn-info {
+  background: #17a2b8 !important;
+  border: transparent;
+  border-radius: 20px;
+}
+:host ::ng-deep .ngx-pagination {
+  padding: 20px;
+  border-right: 3px solid #17a2b8;
+  border-radius: 10px;
+  background-color: white;
+  border-left: 3px solid #17a2b8;
+}

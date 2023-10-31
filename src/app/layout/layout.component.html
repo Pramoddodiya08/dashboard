@@ -1,0 +1,7 @@
+<app-sidenav> </app-sidenav>
+<div [ngClass]="!newToggle ? 'headercontainer' : 'newSidebar'">
+  <app-header></app-header>
+</div>
+<div [ngClass]="!newToggle ? 'Maincontainer' : 'newMaincontainer'">
+  <router-outlet></router-outlet>
+</div>

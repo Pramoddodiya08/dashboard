@@ -1,0 +1,58 @@
+<div class="container-fluid boxdiv d-flex">
+  <div class="col-3">
+    <div class="card">
+      <p>Active User</p>
+      <p>100</p>
+    </div>
+  </div>
+  <div class="col-3">
+    <div class="card">
+      <p>Active User</p>
+      <p>100</p>
+    </div>
+  </div>
+  <div class="col-3">
+    <div class="card">
+      <p>Active User</p>
+      <p>100</p>
+    </div>
+  </div>
+  <div class="col-3">
+    <div class="card">
+      <p>Active User</p>
+      <p>100</p>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid tabdiv">
+  <div class="col-6 firstdiv">
+    <p>OUR DATA</p>
+    <div class="table">
+      <table class="table table-hover">
+        <thead class="table-dark">
+          <tr>
+            <th scope="col">Id</th>
+            <th scope="col">FirstName</th>
+            <th scope="col">LastName</th>
+            <th scope="col">Email</th>
+            <th scope="col">Address</th>
+            <th scope="col">Notes</th>
+            <th scope="col">M.Number</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of contactData; let i = index">
+            <th scope="row">{{ i + 1 }}</th>
+            <td>{{ item.firstname }}</td>
+            <td>{{ item.lastname }}</td>
+            <td>{{ item.email }}</td>
+            <td>{{ item.address }}</td>
+            <td>{{ item.notes }}</td>
+            <td>{{ item.contact }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

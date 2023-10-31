@@ -1,0 +1,28 @@
+.header {
+  position: fixed;
+  top: 0;
+  width: 86%;
+  right: 0;
+  height: 80px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+
+  transition: 0.5s;
+}
+.newHeader {
+  position: relative;
+  width: 100%;
+}
+.profile {
+  img {
+    border-radius: 50%;
+  }
+}
+i {
+  cursor: pointer;
+  position: relative;
+  left: 15%;
+}

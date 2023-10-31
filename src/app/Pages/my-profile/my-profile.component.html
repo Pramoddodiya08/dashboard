@@ -1,0 +1,113 @@
+<div class="container-fuild">
+  <div class="d-flex justify-content-between m-4">
+    <p style="font-weight: bold; margin-left: 10px">ABOUT ME</p>
+  </div>
+  <div class="d-flex">
+    <div class="col-3 imageContainer">
+      <div class="card">
+        <div class="text-center p-4">
+          <img
+            src="assets/my.JPEG"
+            class="card-img-top"
+            style="max-width: 150px"
+          />
+        </div>
+        <div class="card-body">
+          <div>
+            <form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+              <table *ngIf="currentUser">
+                <tr>
+                  <td colspan="3">
+                    <h5 class="card-title">
+                      {{ currentUser.username | uppercase }}
+                    </h5>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="td">EMAIL</td>
+                  <td>:</td>
+                  <!-- <td>{{ currentUser.email }}</td> -->
+                  <td>
+                    <input
+                      type="text"
+                      id="email"
+                      formControlName="email"
+                      class="form-control"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td class="td">Contact Number:</td>
+                  <td>:</td>
+                  <td>
+                    <input
+                      type="text"
+                      id="mobile"
+                      formControlName="mobile"
+                      class="form-control"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td class="td">Address</td>
+                  <td>:</td>
+                  <td>
+                    <input
+                      type="text"
+                      id="address"
+                      formControlName="address"
+                      class="form-control"
+                    />
+                  </td>
+                </tr>
+              </table>
+              <div class="d-flex justify-content-start">
+                <button class="btn btn-success m-4 ms-0 w-25" type="submit">
+                  Update
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-9 details p-5">
+      <div style="background-color: rgb(166, 218, 188); padding: 20px">
+        <p>INFORMATION</p>
+      </div>
+      <form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+        <table style="width: 100%" class="mt-4 mb-4">
+          <tr>
+            <td>Designation</td>
+            <td>:</td>
+            <td>
+              <input
+                type="text"
+                id="designation"
+                formControlName="designation"
+                class="form-control"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Goal</td>
+            <td>:</td>
+            <td>
+              <input
+                type="text"
+                id="goal"
+                formControlName="goal"
+                class="form-control"
+              />
+            </td>
+          </tr>
+        </table>
+        <div class="d-flex justify-content-end">
+          <button class="btn btn-success m-4 me-0 mt-0" type="submit">
+            Update
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

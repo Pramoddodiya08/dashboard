@@ -1,0 +1,32 @@
+<div class="header" [ngClass]="!toggle ? 'header' : 'newHeader'">
+  <div>
+    <!-- <i class="bi bi-list" style="color: brown; font-size: x-large"></i> -->
+    <img
+      src="../../../assets/icons8-menu-256.png"
+      alt=""
+      style="max-width: 40px"
+      (click)="toggleSide()"
+    />
+  </div>
+  <div class="profile">
+    <div class="dropdown">
+      <img
+        src="https://freelogopng.com/images/all_img/1681038325chatgpt-logo-transparent.png"
+        alt=""
+        width="70px"
+        height="50px"
+        class="dropdown-toggle"
+        data-bs-toggle="dropdown"
+        aria-expanded="false"
+        id="dropdownMenuButton1"
+      />
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+        <li>
+          <a class="dropdown-item" routerLink="/my-profile">My Profile</a>
+        </li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><a class="dropdown-item" (click)="logout()">Logout</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
